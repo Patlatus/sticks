@@ -65,7 +65,13 @@ try
 	@mysql_query("delete from gameusers where name = '".$r."'");
 	@mysql_query("delete from gamemoves where username = '".$r."'");
 	$result = mysql_query($addsql);
-  
+  $log->lwrite('$result = '.$result);
+  if (!$result) {
+    $message  = 'Invalid query: ' . mysql_error() . "\n";
+    $message .= 'Whole query: ' . $query;
+    die($message);
+}
+
   $sql="SELECT * FROM gameusers WHERE name = '".$r."'";
 
 $result = mysql_query($sql);

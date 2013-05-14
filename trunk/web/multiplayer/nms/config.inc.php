@@ -2,5 +2,5 @@
 $dbhost = "localhost";
 $dblogin = "peter";
 $dbpass = "abc123";
-$dbname = "stickers";
+$dbname = "ajax_demo";
 ?>
