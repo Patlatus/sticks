@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Customized Desktop Sample App</title>
+
+    <link rel="stylesheet" type="text/css" href="resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="desktop/css/desktop.css" />
+
+    <!-- GC -->
+
+
+    <script type="text/javascript" src="ext.js"></script>
+    <script type="text/javascript" src="all-classes.js"></script> 
+
+    <script type="text/javascript">
+        Ext.Loader.setPath({
+            'Ext.ux.desktop': 'desktop/js',
+            MyDesktop: 'desktop'
+        });
+
+        Ext.require('MyDesktop.App');
+
+        var myDesktopApp;
+        Ext.onReady(function () {
+            myDesktopApp = new MyDesktop.App();
+        });//eliza
+    </script>
+</head>
+
+<body>
+    <div id="abouttext" class="x-hide-display">
+        <pre>Hello! My name is Bohdan. This is my personal website, this implies I'm the author of it.
+So, wellcome to my site. You probably wonder why did I choose default wallpaper with Eliza Dushku.
+ Well, I just like this actress and I had for a long time wallpaper with her on my real desktop.
+About this site. It is nothing special, just a slightly modified example of Web Desktop Sample by Sencha.
+About myself. I live in Lviv, Ukraine, but I don't mind moving to USA.
+I am mathematician and programmer, developer. Also I am Ph.D. student.
+Currently I'm finishing my Ph.D. studies and would like to defend my Ph.D. thesis as soon as possible
+to dedicate myself completely to programming and developing applications.
+I have been writing programs from my childhood. My first programs were quite simple, written on Pascal for DOS.
+Later on I started writing programs on Delphi for Windows operating system 
+and I wrote many non-profitable and non-commercial applications.
+During my study at the university I was helping to write applications and explaining how to write programs 
+to every student, both older and younger than me.
+Then I was employed at my first IT company where I was taught to copypaste code and not to invent a bicycle.
+This was my first commercial experience. I used there Delphi as programming language, 
+MS SQL Server as  relational database management system and SVN as Subversion client System.
+Later on I moved to another company  where we were developing a lot of optimization algorythms for Ukrainian Railway
+and for Ukrainian Gas and Oil System.
+After that  I entered postgraduate studies.
+Recently I was employed at another IT company, where I received commercial experience of developing web applications
+on Java as server language of IBM WebSphere server, JavaScript as client language using jQuery and Ext JS frameworks.
+Also I developed numerous non-profitable and non-commercial sites using simple primitive HTML, CSS, somewhere I used PHP
+as server language and MySQL as relational database management system.
+I have a dream to adapt all my old Delphi applications to both mobile and web platforms. 
+By mobile platforms I mean Android, Windows Phone 7, maybe iPhone.
+And by web platforms I mean client JS frameworks like jQuery and Ext JS.
+By the way, if you noticed, this site has actually one of my old Delphi applications adapted for a web called Matches.
+Also I supervise work of two my friends, I teach one of them to develop applications on Java and  Android SDK Tools,
+and I teach another one how to write applications on C++, C# and Windows Phone 7 SDK.
+Also I won a lot of competitions and olympiads, for example I received this gold medal from Ariel University of Samaria.
+Have you seen it? I won it in Fifth Internet Olympiad. Full list of my achievements is provided in my CV.
+Ok, I think that's enough. Thank you for your time and your attention. Best regards. Bye.</pre>
+    </div>
+	
+    <a href="http://www.sencha.com" target="_blank" alt="Powered by Ext JS"
+       id="poweredby"><div></div></a>
+
+</body>
+</html>
