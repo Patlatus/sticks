@@ -1,0 +1,3 @@
+sencha app build native
+
+
